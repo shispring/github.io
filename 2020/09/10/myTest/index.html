@@ -7,13 +7,15 @@
   
   <title>myTest | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="hexo建站##一、nodejs 12#node.js下载 （官网https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;）1. wget https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v12.18.3&#x2F;node-v12.18.3.pkg  ##二、hexo 12345678#hexo安装 （官网https:&amp;#x2F">
+<meta property="og:type" content="article">
 <meta property="og:title" content="myTest">
 <meta property="og:url" content="http://example.com/2020/09/10/myTest/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hexo建站##一、nodejs 12#node.js下载 （官网https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;）1. wget https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v12.18.3&#x2F;node-v12.18.3.pkg  ##二、hexo 12345678#hexo安装 （官网https:&amp;#x2F">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-10T09:21:08.000Z">
-<meta property="article:modified_time" content="2020-09-10T09:21:08.998Z">
+<meta property="article:modified_time" content="2020-09-12T02:50:42.821Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -86,7 +88,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="hexo建站"><a href="#hexo建站" class="headerlink" title="hexo建站"></a>hexo建站</h1><p>##一、nodejs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#node.js下载 （官网https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;）</span><br><span class="line">1. wget https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v12.18.3&#x2F;node-v12.18.3.pkg</span><br></pre></td></tr></table></figure>
+
+<p>##二、hexo</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#hexo安装 （官网https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;）</span><br><span class="line">1. mkdir blog</span><br><span class="line">2. npm install hexo-cli -g</span><br><span class="line">    #升级命令 npm update hexo-cli -g</span><br><span class="line">3. hexo init blog  #初始化博客</span><br><span class="line">4. cd blog</span><br><span class="line">5. npm install</span><br><span class="line">6. hexo server</span><br></pre></td></tr></table></figure>
+
+<p>##三、生成文档</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">#新建文章</span><br><span class="line">hexo n myTest  &#x3D;&#x3D; hexo new myTest</span><br><span class="line">#生成</span><br><span class="line">hexo g &#x3D;&#x3D; hexo generate</span><br><span class="line">#启动服务预览</span><br><span class="line">hexo s</span><br><span class="line">#部署</span><br><span class="line">hexo d &#x3D;&#x3D; hexo deploy</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>##四、部署到github</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#</span><br><span class="line">github新建香蜜github.io</span><br><span class="line">vim _config.yaml</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;shispring&#x2F;github.io.git</span><br><span class="line">  branch: master</span><br><span class="line"></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+
       
     </div>
     <footer class="article-footer">
@@ -100,9 +116,9 @@
 <nav id="article-nav">
   
   
-    <a href="/2020/09/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/09/10/elk/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">Elastic stack</div>
     </a>
   
 </nav>
@@ -140,6 +156,10 @@
         
           <li>
             <a href="/2020/09/10/myTest/">myTest</a>
+          </li>
+        
+          <li>
+            <a href="/2020/09/10/elk/">Elastic stack</a>
           </li>
         
           <li>
